@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "acb500c5-d928-4464-9d53-dc4854c8a63f",
+		"name": "Yugioh Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24390809"
+	},
+	"item": [
+		{
+			"name": "Deck Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Master of rites II\",\r\n    \"cards\":[\r\n        {\r\n            \"name\":\"Nekroz of Brionac\"\r\n        },\r\n        {\r\n            \"name\":\"Nekroz of Trishula\"\r\n        },\r\n        {\r\n            \"name\":\"Nekroz of Decisive Armor\"\r\n        },\r\n        {\r\n            \"name\":\"Nekroz of Valkyrus\"\r\n        }\r\n    ]\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/deck/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deck",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Deck Information",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Master of rites II\",\r\n    \"cards\":[\r\n        {\r\n            \"name\":\"Nekroz of Brionac\"\r\n        },\r\n        {\r\n            \"name\":\"Nekroz of Trishula\"\r\n        },\r\n        {\r\n            \"name\":\"Nekroz of Decisive Armor\"\r\n        },\r\n        {\r\n            \"name\":\"Nekroz of Valkyrus\"\r\n        }\r\n    ]\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/deck/1133764309",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deck",
+						"1133764309"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Deck Information",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Master of rites\",\r\n    \"cards\":[\r\n        {\r\n            \"name\":\"Nekroz of Brionac\"\r\n        },\r\n        {\r\n            \"name\":\"Nekroz of Trishula\"\r\n        },\r\n        {\r\n            \"name\":\"Nekroz of Decisive Armor\"\r\n        },\r\n        {\r\n            \"name\":\"Nekroz of Valkyrus\"\r\n        },\r\n        {\r\n            \"name\":\"Manju of the Ten\"\r\n        }\r\n    ]\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/deck/update/1133764309",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deck",
+						"update",
+						"1133764309"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove Deck",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Master of rites\",\r\n    \"cards\":[\r\n        {\r\n            \"name\":\"Nekroz of Brionac\"\r\n        },\r\n        {\r\n            \"name\":\"Nekroz of Trishula\"\r\n        },\r\n        {\r\n            \"name\":\"Nekroz of Decisive Armor\"\r\n        },\r\n        {\r\n            \"name\":\"Nekroz of Valkyrus\"\r\n        },\r\n        {\r\n            \"name\":\"Manju of the Ten\"\r\n        }\r\n    ]\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/deck/remove/1133764309",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deck",
+						"remove",
+						"1133764309"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
